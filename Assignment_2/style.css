@@ -1,0 +1,607 @@
+
+/* sets the box-sizing of all the elements to border box */
+* {
+  box-sizing: border-box;
+}
+
+/* styles the navigation bar, footer and links for consistant styling */
+nav,
+footer,
+a {
+  background-color: #212529;
+  color: white;
+  text-decoration: none;
+}
+
+/* adjusts the spacing of list items(navbar links) of the navbar */
+.navbar ul li {
+  display: inline;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/* adjusts the spacing of the navbar */
+.navbar {
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+/* hides the navbar for bigger screen with display none */
+.navbar input,
+.navbar label {
+  display: none;
+  width: 100%;
+}
+
+/* sets the nav display to flex so that all the items appear in a row, and adjusts its styling and spacing */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  width: 100%;
+}
+
+
+/* sets the background color of the navbar link when the user hovers over it */
+nav li:hover{
+  background-color: #00c3ff;
+}
+
+/* makes the background color transparent for <a> tag of navbar so that when the user hover over the li item they can see the background color */
+nav li a{
+  background-color: #21252900;
+}
+
+li {
+  list-style: none;
+}
+
+
+body {
+  margin: 0;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+/* styles the customers picture in the reviews section */
+.img-cover {
+  object-fit: cover;
+  object-position: center;
+  height: 300px;
+  width: 300px;
+}
+
+h2{
+  text-align: center;
+  font-size: 3.5vh;
+}
+
+
+h3{
+  text-align: center;
+  font-size: 3vh;
+  margin-bottom: 0px;
+}
+
+h4 {
+  text-align: center;
+  font-size: 25px;
+}
+
+/* styles the features section of the webpage */
+.features_content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  box-sizing: border-box;
+
+}
+
+.features_css h2{
+  margin-bottom: 0;
+}
+
+.features_content>div {
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 5px;
+  width: 355.695px;
+  margin: 1%;
+  /* height: 25%; */
+  box-sizing: border-box;
+}
+
+.features_content h4 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.features_content hr {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.features_content ul {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.features_content div div {
+  text-align: center;
+}
+
+.features_content button {
+  color: white;
+  margin-bottom: 5%;
+}
+
+/* styles the hero section of the webpage */
+.heroSection button,
+.features_content button {
+  padding: 2.5%;
+  background-color: #00c3ff;
+  border: 0px;
+  border-radius: 5px;
+  font-size: large;
+  cursor: pointer;
+}
+
+.heroSection button {
+  margin-bottom: 1%;
+}
+
+.heroSection::before {
+  content: "";
+  background-image: url("./images/hero_bg_image.jpeg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.heroSection * {
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.heroSection {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.heroSection div {
+  width: 30%;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* sets the loaders section background to be full screen and makes its background transparent */
+.loaderSec {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: loaderAfter 5s;
+  background-color: black;
+  animation-fill-mode: forwards;
+}
+
+/* creates the loader */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border-radius: 50%;
+  background: conic-gradient(#25b09b 25%, #f03355 0 50%, #514b82 0 75%, #ffa516 0);
+  animation: l22 5s;
+  animation-fill-mode: forwards;
+}
+
+/* styles for before and after event of the loader  */
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 15%;
+  border-radius: 50%;
+  background: inherit;
+  animation: inherit;
+}
+
+/* style for just the after event for loader */
+.loader::after {
+  margin: 25%;
+  animation-duration: 3s;
+}
+
+/* css for destination section of the webpage */
+.destinations_content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.destinations_content>div {
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  margin: 2%;
+  margin-top: 1%;
+  width: 25%;
+  text-align: center;
+  padding: 1%;
+  box-sizing: border-box;
+}
+
+.destinations_content h5 {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+  margin-top: 2%;
+}
+
+.destinations_content img {
+  border: 10px solid white;
+}
+
+.destinations_content p {
+  margin: 0;
+  margin-top: 2%;
+}
+
+.destinations_content div div {
+  width: 100%;
+}
+
+.destinations_content_parent {
+  background-color: rgba(128, 128, 128, 0.05);
+  padding-top: 1%;
+}
+
+.destinations_content_parent h2 {
+  margin-bottom: 0;
+}
+
+/* styles for customer review section of the webpage */
+.customer_reviews {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+}
+
+.customer_reviews>div {
+  width: 309.047px;
+  text-align: center;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  padding: 1%;
+  border-radius: 5px;
+  margin: 1%;
+}
+
+.customer_reviews img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.customer_reviews small {
+  color: gray;
+}
+
+/* styles for footer section */
+.footer_content {
+  display: flex;
+  justify-content: center;
+}
+
+.left_part {
+  float: right;
+  text-align: center;
+}
+
+.right_part {
+  float: left;
+  text-align: center;
+}
+
+footer p{
+  text-align: center;
+}
+
+/* style for footer , header and section */
+header,
+footer,
+section {
+  animation: fading_animation 4s;
+}
+
+
+
+/* .reveal {
+  position: relative;
+  transition: 2s all ease;
+} */
+
+/* sets the animation that makes the content of hero section to slide into screen to the left side from right side */
+.reveal.heroSection * {
+  animation: slide-left 3s forwards;
+}
+
+
+/* sets the animation when user hovers over the content in features section */
+.feature_hover_animation:hover {
+  cursor: pointer;
+  animation: border_animation 1s forwards;
+}
+
+/* styles the arrow present in button of the features section to properly display the animation */
+.shake_btn_arrow {
+  color: white;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+/* sets the animation to that arrow so that it shakes */
+.features_content button:hover>.shake_btn_arrow {
+  animation: shake_btn_arrow_animation 0.65s infinite forwards;
+}
+
+/* rotates the loader */
+@keyframes l22 {
+  0% {
+    transform: rotate(1turn);
+    opacity: 1;
+  }
+
+  100% {
+    background: none;
+  }
+}
+
+/* animation  for once the loader is done loading */
+@keyframes loaderAfter {
+  0%{
+    overflow: hidden;
+  }
+  100% {
+    background: none;
+    z-index: -100;
+    overflow: visible;
+  }
+}
+
+/* fading animation for header, footer and section tags*/
+@keyframes fading_animation {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* animation for sliding the content to the left */
+@keyframes slide-left {
+  0% {
+    transform: translateX(1500px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* animation for shaking the tag on its x axis */
+@keyframes shake_btn_arrow_animation {
+  0% {
+    transform: translateX(0)
+  }
+
+  25% {
+    transform: translateX(5px)
+  }
+
+  50% {
+    transform: translateX(-5px)
+  }
+
+  75% {
+    transform: translateX(5px)
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}
+
+/* border animation for the div tags in the features content. this animation sets different sides of border at different times of the animation duration */
+@keyframes border_animation {
+  0% {
+    border-top: 2px solid #00c3ff;
+  }
+
+  25% {
+    border-top: 0;
+    border-right: 2px solid #00c3ff;
+  }
+
+  50% {
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px solid #00c3ff;
+  }
+
+  75% {
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 2px solid #00c3ff;
+  }
+
+  100% {
+    border: 2px solid #00c3ff;
+  }
+
+}
+
+
+
+
+/* media queries */
+
+/* media queries for responsive navbar */
+@media only screen and (max-width: 815px) {
+
+  .navbar label,
+  .navbar li,
+  .navbar a {
+    display: block !important;
+    width: 100%;
+    text-align: center;
+    background-color: #212529;
+  }
+
+
+  .navbar ul {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    /* z-index: 100; */
+    width: 100%;
+    background-color: #212529;
+    overflow: hidden;
+    /* fix overflow */
+    /* font-size: 15px; */
+    display: none;
+    padding: 0px;
+    font-size: 20px;
+    padding-bottom: 15px;
+    max-height: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar li {
+    padding: 0% !important;
+  }
+
+  .navbar a {
+    padding: 1%;
+  }
+
+  .navbar li:hover,
+  .navbar a:hover {
+    background-color: #00c3ff;
+  }
+
+  .navbar label {
+    font-size: 40px;
+  }
+
+  .navbar input:checked~div ul {
+    width: 100%;
+    float: right;
+    z-index: 100;
+    /* transition: ; */
+    max-height: auto;
+    overflow: visible;
+    display: block;
+    transition: all 1s ease-in;
+  }
+
+  .navbar input:checked~label {
+    color: #00c3ff;
+  }
+
+}
+
+/* media queries for screen sizes up to 480px */
+@media only screen and (max-width: 480px) {
+  .destinations_content div {
+    width: 90%;
+  }
+
+  .heroSection div {
+    width: 70%;
+  }
+}
+
+/* media queries for screen sizes from 481px to 635px */
+@media only screen and (min-width: 481px) and (max-width: 635px) {
+  .destinations_content div {
+    width: 90%;
+  }
+
+  .heroSection div {
+    width: 70%;
+  }
+}
+
+/* media queries for screen sizes from 636px to 966px */
+@media only screen and (min-width: 636px) and (max-width: 966px) {
+  .destinations_content div {
+    width: 60%;
+  }
+
+  .heroSection div {
+    width: 45%;
+  }
+}
+
+/* media queries for screen sizes from 967px to 1233px */
+@media only screen and (min-width: 967px) and (max-width: 1233px) {
+  .destinations_content div {
+    width: 45%;
+  }
+
+  .heroSection div {
+    width: 40%;
+  }
+}
+
+/* media queries for screen sizes from 1234px to 1540px */
+@media only screen and (min-width: 1234px) and (max-width: 1540px) {
+  .destinations_content div {
+    width: 30%;
+    margin: 1%
+  }
+
+  .heroSection div {
+    width: 35%;
+  }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Hoppers</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header section that contains nav bar with website name and navigation bar containing links to sections of website -->
+    <header>
+        <nav>
+            <h1><a class="website_name" href="#home">Horizon Hoppers</a></h1>
+            <div class="navbar">
+                <input id="navbar_icon" type="checkbox">
+                <label for="navbar_icon">&#9776;</label>
+                <div>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#destinations">Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main section contains the content of the website. -->
+    <main role="main">
+        <!-- loader that appears before the page loads -->
+        <section class="loaderSec">
+            <div class="loader"></div>
+        </section>
+
+        <!-- Hero section -->
+        <section id="home" class="heroSection reveal ">
+            <div>
+                <h3>Explore the Unchartered</h3>
+                <p>Discover Adventure. Create Memories. Live Boldly</p>
+                <button href="#" type="button">Start Your Adventure</button>
+            </div>
+        </section>
+
+        <!-- features section explaining the features provided by the company -->
+        <section id="features" class="features_css">
+            <h2>Features</h2>
+            <div class="features_content reveal ">
+                <div class="feature_hover_animation">
+                    <h4>Expert Guides</h4>
+                    <hr>
+                    <ul>
+                        <li><span>&#10003;</span> &nbsp;Experienced and certified guides</li>
+                        <li><span>&#10003;</span> &nbsp;Personalized attention and guidance</li>
+                        <li><span>&#10003;</span> &nbsp;Safety-focused approach</li>
+                        <li><span>&#10003;</span> &nbsp;Insider tips and insights</li>
+                        <li><span>&#10003;</span> &nbsp;Multilingual guides available</li>
+                    </ul>
+                    <div>
+                        <button href="#" type="button">Learn More <span class="shake_btn_arrow">&#8594;</span></button>
+                    </div>
+                </div>
+                <div class="feature_hover_animation">
+                    <h4>Customized Packages</h4>
+                    <hr>
+
+                    <ul>
+                        <li><span>&#10003;</span> &nbsp;Tailored itineraries</li>
+                        <li><span>&#10003;</span> &nbsp;Flexibility in activities and accommodations</li>
+                        <li><span>&#10003;</span> &nbsp;Personalized travel specialists available</li>
+                        <li><span>&#10003;</span> &nbsp;Add-on services available</li>
+                        <li><span>&#10003;</span> &nbsp;Transparent pricing and detailed information</li>
+                    </ul>
+                    <div>
+                        <button href="#" type="button">Learn More<span class="shake_btn_arrow">&#8594;</span></button>
+                    </div>
+                </div>
+                <div class="feature_hover_animation">
+                    <h4>Diverse Experiences</h4>
+                    <hr>
+
+                    <ul>
+                        <li><span>&#10003;</span> &nbsp;Range of adventure activities</li>
+                        <li><span>&#10003;</span> &nbsp;Variety of destinations explored</li>
+                        <li><span>&#10003;</span> &nbsp;Specialized experiences available</li>
+                        <li><span>&#10003;</span> &nbsp;Opportunities for meaningful interactions</li>
+                        <li><span>&#10003;</span> &nbsp;Seasonal and themed experiences</li>
+                    </ul>
+                    <div>
+                        <button href="#" type="button">Learn More<span class="shake_btn_arrow">&#8594;</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- destinations section, listing the destinations that customers can travel to with the company-->
+        <section id="destinations" class=" destinations_content_parent">
+            <h2>Destinations</h2>
+
+            <div class="destinations_content reveal ">
+                <div>
+                    <img src="./images/france.jpeg"
+                        class="d-block dest_images" >
+                    <div>
+                        <h5>France</h5>
+                        <p>Embark on an enchanting journey through France, discovering its iconic landmarks,
+                            culinary delights, and rich cultural heritage with our tailored travel experiences.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/italy.jpeg"
+                        class="d-block dest_images" >
+                    <div>
+                        <h5>Italy</h5>
+                        <p>Discover Italy's ancient wonders and culinary delights, from the Colosseum in Rome to
+                            the picturesque Amalfi Coast.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/switzerland.jpeg"
+                        class="d-block dest_images">
+                    <div>
+                        <h5>Switzerland</h5>
+                        <p>Experience Switzerland's breathtaking Alps and picturesque towns, offering thrilling
+                            adventures and stunning natural beauty.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews section lists top three reviews provided by the company's customers -->
+        <section id="reviews" class="">
+            <h2>Customer Reviews</h2>
+            <div class="customer_reviews reveal ">
+                <div>
+                    <div class="card">
+                        <img src="./images/customerR1.jpeg"
+                            class="img-cover">
+                        <div>
+                            <p>Our journey through Italy with Horizon Hoppers was nothing short of magical. The
+                                historical sites, delicious food, and expert guidance made it an unforgettable
+                                experience!</p>
+                            <p><small>- John Doe</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./images/customerR2.jpeg"
+                            class="img-cover">
+                        <div>
+                            <p>Exploring France with Horizon Hoppers was a dream come true. From the iconic landmarks of
+                                Paris to the charming villages of Provence, every moment was filled with wonder and
+                                discovery.</p>
+                            <p><small>- Jane Smith</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./images/customerR3.jpeg"
+                            class="img-cover">
+                        <div class="card-body text-center">
+                            <p>Switzerland exceeded all our expectations thanks to Horizon Hoppers. The stunning Alps,
+                                thrilling adventures, and warm hospitality made our trip truly memorable. Highly
+                                recommended!</p>
+                            <p><small>- Mike Johnson</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section of the website -->
+    <footer id="contact" class="">
+        <div class="footer_content reveal ">
+            <div>
+                <ul class="left_part">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="right_part">
+                    <li> &nbsp; <a href="https://twitter.com/">Twitter</a></li>
+                    <li> &nbsp; <a href="https://www.facebook.com/">Facebook</a></li>
+                    <li>&nbsp; <a href="https://www.instagram.com/">Instagram</a></li>
+                    <li> &nbsp; <a href="https://github.com/login">Instagram</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2024 Horizon Hoppers</p>
+    </footer>
+</body>
+
+</html>
